@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário sobre Tecnologia na Agricultura</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Questionário sobre Tecnologia na Agricultura</h1>
+        <form id="agriculture-form">
+            <div class="question">
+                <label for="question1">1. Qual tecnologia você acredita ser a mais inovadora na agricultura?</label>
+                <select id="question1" name="question1" required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="Sensores de Solo">Sensores de Solo</option>
+                    <option value="Drones">Drones</option>
+                    <option value="Inteligência Artificial">Inteligência Artificial</option>
+                    <option value="Sistemas de Irrigação Automatizados">Sistemas de Irrigação Automatizados</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="question2">2. Como você acha que os drones podem ajudar na agricultura?</label>
+                <select id="question2" name="question2" required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="Monitoramento de Culturas">Monitoramento de Culturas</option>
+                    <option value="Aplicação de Fertilizantes">Aplicação de Fertilizantes</option>
+                    <option value="Mapeamento de Terrenos">Mapeamento de Terrenos</option>
+                    <option value="Inspeção de Irrigação">Inspeção de Irrigação</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="question3">3. Qual é o impacto da inteligência artificial na agricultura?</label>
+                <select id="question3" name="question3" required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="Análise de Dados de Culturas">Análise de Dados de Culturas</option>
+                    <option value="Previsão de Colheitas">Previsão de Colheitas</option>
+                    <option value="Gestão de Recursos">Gestão de Recursos</option>
+                    <option value="Automação de Processos">Automação de Processos</option>
+                </select>
+            </div>
+            <div class="button-container">
+                <button type="button" onclick="submitForm()">Enviar</button>
+            </div>
+        </form>
+        <div class="results" id="results"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
